@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Runner Game</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #000; }
+        canvas { display: block; }
+        #score-counter {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 24px;
+            font-family: sans-serif;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="score-counter">SCORE: 0</div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="./script.js"></script> 
+</body>
+</html>
